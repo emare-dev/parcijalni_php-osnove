@@ -89,7 +89,31 @@
     }
 }
 
-else { echo "<h3>Radi se o BROJU</h3>"; }
+// BROJEVI
+else {
+
+echo "<h3>Radi se o BROJU</h3>"; }
+
+$broj = ceil($podatak);
+
+    echo "<p>Zaokruženi broj: {$broj}</p>";
+
+    setcookie("broj", $broj, time() + 300);
+
+    $file = $storagePath . "/brojevi.json";
+
+    if (!file_exists($file)) {
+        file_put_contents($file, json_encode([]));
+    }
+
+    $podaci = json_decode(file_get_contents($file), true);
+    $podaci[] = $broj;
+
+    file_put_contents($file, json_encode($podaci, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+    echo "<label>Ukupno brojeva: " . count($podaci) . "</label>";
+
+    ?>
 
 
   ?>
