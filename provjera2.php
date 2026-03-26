@@ -3,6 +3,7 @@
 
 <head>
   <title>Provjera 2</title>
+  <link rel="stylesheet" href="stil.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
   echo "<h2>Primljeni podatak: {$podatak}</h2>";
 
   // STRINGOVI
-  if (!is_numeric($podatak)) {
+  if (is_string($podatak)) {
 
     echo "<h3>Ovo je STRING.</h3>";
 
@@ -43,6 +44,21 @@
   }
 
   ?>
+
+  <h3>Forma 2 - STRING</h3>
+
+  <form method="POST">
+
+    <input type="text" name="tekst" value="<?= htmlspecialchars($podatak); ?>">
+
+    <label><input type="checkbox" name="opcije[]" value="duljina">Duljina</label>
+    <label><input type="checkbox" name="opcije[]" value="rijeci">Broj riječi</label>
+    <label><input type="checkbox" name="opcije[]" value="interpunkcija">Interpunkcija</label>
+    <label><input type="checkbox" name="opcije[]" value="prva">Prva riječ</label>
+
+    <input type="submit" value="Izračunaj">
+
+  </form>
 
 </body>
 

@@ -1,10 +1,10 @@
 # PHP OSNOVE - parcijalni ispit
 
-Potrebno je napraviti aplikaciju koja će preko skripte `provjera1.php` preko forme1 upisivati neki
+Potrebno je napraviti aplikaciju koja će preko skripte `provjera1.php` preko `forme1` upisivati neki
 podatak te ga prosljeđivati preko POST metode u skriptu `provjera2.php` koja će, nakon što primi
 podatak, provjeriti da li se radi o numeričkoj vrijednosti ili stringu.
 
-Ako se radi o stringu (is_string), tada će ta vrijednost prikazati u tekst polju unutar forme2, te će se ponuditi odabir sljedećih vrijednosti preko checkbox-a:
+Ako se radi o stringu (`is_string`), tada će ta vrijednost prikazati u tekst polju unutar `forme2`, te će se ponuditi odabir sljedećih vrijednosti preko checkbox-a:
 
 - izračunaj duljinu stringa
 - izračunaj broj riječi
@@ -15,7 +15,7 @@ poslanom stringu.
 Poslani string spremiti u session, te nakon toga u datoteku `storage/tekstovi.json`.
 Ispisati koliko do sad je obrađeno stringova.
 
-Ako se radi o numeričkoj vrijednosti (is_numeric), zaokružiti je na veći integer (ceil funkcija), tada će ta vrijednost prikazati u tekst polju unutar forme2, te će se ponuditi odabir sljedećih vrijednosti preko radio button-a:
+Ako se radi o numeričkoj vrijednosti (`is_numeric`), zaokružiti je na veći integer (ceil funkcija), tada će ta vrijednost prikazati u tekst polju unutar forme2, te će se ponuditi odabir sljedećih vrijednosti preko radio button-a:
 
 - izračun složenosti (prost/složen) - napraviti funkciju koja će vratiti rezultat
 - izračun faktorijela (samo ako je broj manji od 10), inače ispisati: Broj je prevelik za izračun
