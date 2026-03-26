@@ -3,6 +3,7 @@
 
 <head>
   <title>Forma 1</title>
+  <link rel="stylesheet" href="stil.css">
 </head>
 
 <body>
