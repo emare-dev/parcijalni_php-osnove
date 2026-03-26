@@ -60,6 +60,40 @@
 
   </form>
 
+
+  <?php
+
+  if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+        $tekst = $_POST["tekst"] ?? "";
+        $opcije = $_POST["opcije"] ?? [];
+
+        foreach ($opcije as $opcija) {
+
+            if ($opcija == "duljina") {
+                echo "<p>Duljina stringa: " . duljina($tekst) . "</p>";
+            }
+
+            if ($opcija == "rijeci") {
+                echo "<p>Broj riječi: " . brojRijeci($tekst) . "</p>";
+            }
+
+            if ($opcija == "interpunkcija") {
+                echo "<p>Broj interpunkcijskin znakova: " . brojInterpunkcija($tekst) . "</p>";
+            }
+
+            if ($opcija == "prva") {
+                echo "<p>" . prvaRijecPonavljanje($tekst) . "</p>";
+            }
+        }
+    }
+}
+
+else { echo "<h3>Radi se o BROJU</h3>"; }
+
+
+  ?>
+
 </body>
 
 </html>
