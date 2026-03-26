@@ -20,3 +20,9 @@ function brojInterpunkcija($str) {
 
   return $brojac;
 }
+
+function prvaRijecPonavljanje($str) {
+  $rijeci = explode(" ", $str);
+  $prva = $rijeci[0] ?? "";
+  return str_repeat($prva . " ", count($rijeci));
+}
