@@ -1,7 +1,7 @@
 # PHP OSNOVE - parcijalni ispit
 
-Potrebno je napraviti aplikaciju koja će preko skripte provjera1.php preko forme1 upisivati neki
-podatak te ga prosljeđivati preko POST metode u skriptu provjera2.php koja će, nakon što primi
+Potrebno je napraviti aplikaciju koja će preko skripte `provjera1.php` preko forme1 upisivati neki
+podatak te ga prosljeđivati preko POST metode u skriptu `provjera2.php` koja će, nakon što primi
 podatak, provjeriti da li se radi o numeričkoj vrijednosti ili stringu.
 
 Ako se radi o stringu (is_string), tada će ta vrijednost prikazati u tekst polju unutar forme2, te će se ponuditi odabir sljedećih vrijednosti preko checkbox-a:

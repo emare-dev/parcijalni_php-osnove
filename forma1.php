@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Forma 1</title>
+</head>
+
+<body>
+
+  <h1>Unos podatka</h1>
+
+  <form method="POST" action="provjera1.php">
+
+    <label>Unesi podatak:</label>
+    <label>
+      <input type="text" name="podatak" required>
+    </label>
+
+    <br><br>
+
+    <input type="submit" value="Pošalji">
+
+  </form>
+
+</body>
+
+</html>
