@@ -8,11 +8,11 @@
 
 <body>
 
-  <h1>Unos podatka</h1>
+  <h1>Forma 1</h1>
 
   <form method="POST" action="provjera1.php">
 
-    <label>Unesi podatak:</label>
+    <h2>Unesi podatak:</h2>
     <label>
       <input type="text" name="podatak" required>
     </label>
