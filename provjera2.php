@@ -111,7 +111,7 @@
 
     file_put_contents($file, json_encode($podaci, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
-    echo "<label>Ukupno brojeva: " . count($podaci) . "</label>";
+    echo "<p>Ukupno brojeva: " . count($podaci) . "</p>";
 
     ?>
 
@@ -137,15 +137,15 @@
       $opcija = $_POST["opcija"] ?? "";
 
       if ($opcija == "prost") {
-        echo "<p>" . jeProst($broj) . "</p>";
+        echo "<p class=\"rezultat\">" . jeProst($broj) . "</p>";
       }
 
       if ($opcija == "faktorijel") {
-        echo "<p>" . faktorijel($broj) . "</p>";
+        echo "<p class=\"rezultat\">" . faktorijel($broj) . "</p>";
       }
 
       if ($opcija == "binarno") {
-        echo "<p>" . uBinarni($broj) . "</p>";
+        echo "<p class=\"rezultat\">" . uBinarni($broj) . "</p>";
       }
     }
   }

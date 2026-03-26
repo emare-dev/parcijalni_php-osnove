@@ -16,4 +16,21 @@ form {
   * {
     margin-block: 10px;
   }
+
+  input {
+    background-color: lightyellow;
+    padding: 10px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  .rezultat {
+    background-color: lightblue;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+  }
 }
