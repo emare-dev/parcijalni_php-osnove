@@ -17,8 +17,6 @@
       <input type="text" name="podatak" required>
     </label>
 
-    <br><br>
-
     <input type="submit" value="Pošalji">
 
   </form>
