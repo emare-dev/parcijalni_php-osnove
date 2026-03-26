@@ -115,6 +115,19 @@ $broj = ceil($podatak);
 
     ?>
 
+    <h3>Forma 2 - BROJ</h3>
+
+    <form method="POST">
+
+      <input type="number" name="broj" value="<?= $broj; ?>">
+
+      <label><input type="radio" name="opcija" value="prost"> Prost/Složen</label>
+      <label><input type="radio" name="opcija" value="faktorijel"> Faktorijel</label>
+      <label><input type="radio" name="opcija" value="binarno"> Binarni zapis</label>
+
+      <input type="submit" value="Izračunaj">
+
+    </form>
 
   ?>
 
