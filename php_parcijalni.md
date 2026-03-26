@@ -12,7 +12,8 @@ Ako se radi o stringu (is_string), tada će ta vrijednost prikazati u tekst polj
 - ispis prve riječi - prvu riječ iz stringa ispisati onoliko puta koliko ima sveukupno riječi u
 poslanom stringu.
 
-Poslani string spremiti u session, te nakon toga u datoteku storage/tekstovi.json. Ispisati koliko do sad je obrađeno stringova.
+Poslani string spremiti u session, te nakon toga u datoteku `storage/tekstovi.json`.
+Ispisati koliko do sad je obrađeno stringova.
 
 Ako se radi o numeričkoj vrijednosti (is_numeric), zaokružiti je na veći integer (ceil funkcija), tada će ta vrijednost prikazati u tekst polju unutar forme2, te će se ponuditi odabir sljedećih vrijednosti preko radio button-a:
 
