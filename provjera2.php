@@ -21,7 +21,7 @@
 
   $podatak = $_GET["podatak"] ?? "";
 
-  echo "<h2>Primljeni podatak: {$podatak}</h2>";
+  echo "<p class=\"podatak\">Primljeni podatak: {$podatak}</p>";
 
   // STRINGOVI
   if (!is_numeric($podatak)) {
@@ -44,8 +44,6 @@
 
 
   ?>
-
-    <h3>Forma 2 - STRING</h3>
 
     <form method="POST">
 
@@ -71,19 +69,19 @@
       foreach ($opcije as $opcija) {
 
         if ($opcija == "duljina") {
-          echo "<p>Duljina stringa: " . duljina($tekst) . "</p>";
+          echo "<p class=\"rezultat\">Duljina stringa: " . duljina($tekst) . "</p>";
         }
 
         if ($opcija == "rijeci") {
-          echo "<p>Broj riječi: " . brojRijeci($tekst) . "</p>";
+          echo "<p class=\"rezultat\">Broj riječi: " . brojRijeci($tekst) . "</p>";
         }
 
         if ($opcija == "interpunkcija") {
-          echo "<p>Broj interpunkcijskin znakova: " . brojInterpunkcija($tekst) . "</p>";
+          echo "<p class=\"rezultat\">Broj interpunkcijskin znakova: " . brojInterpunkcija($tekst) . "</p>";
         }
 
         if ($opcija == "prva") {
-          echo "<p>Ponavljanje prve riječi:" . prvaRijecPonavljanje($tekst) . "</p>";
+          echo "<p class=\"rezultat\">Ponavljanje prve riječi:" . prvaRijecPonavljanje($tekst) . "</p>";
         }
       }
     }
@@ -114,8 +112,6 @@
     echo "<p>Ukupno brojeva: " . count($podaci) . "</p>";
 
     ?>
-
-    <h3>Forma 2 - BROJ</h3>
 
     <form method="POST">
 
@@ -185,8 +181,6 @@
     $mjeseci[$mjesecENG] . " " .
     date("Y") . " u " .
     date("H:i:s") . ".";
-
-
   ?>
 
 </body>

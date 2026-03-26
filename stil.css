@@ -2,7 +2,7 @@
 
 body {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -25,12 +25,26 @@ form {
   input[type="checkbox"],
   input[type="radio"] {
     margin-right: 10px;
+    font-size: 0.8em;
   }
 
-  .rezultat {
-    background-color: lightblue;
-    padding: 10px;
-    width: 200px;
-    margin: auto;
+  input[type="submit"] {
+    background-color: palegreen;
   }
+
+}
+
+.podatak {
+  background-color: lavender;
+}
+
+.rezultat {
+  background-color: lightblue;
+  /* width: 200px; */
+}
+
+.podatak,
+.rezultat {
+  padding: 10px;
+  margin: auto;
 }
